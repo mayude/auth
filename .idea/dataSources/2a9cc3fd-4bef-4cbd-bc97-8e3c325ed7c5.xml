@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="auth@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="auth">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="coding"/>
+    <schema id="4" parent="1" name="dbgirl"/>
+    <schema id="5" parent="1" name="db_djangoexample"/>
+    <schema id="6" parent="1" name="easycmsdb"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="kdwb"/>
+    <schema id="9" parent="1" name="mysite"/>
+    <schema id="10" parent="1" name="mysql"/>
+    <schema id="11" parent="1" name="performance_schema"/>
+    <schema id="12" parent="1" name="smvcsh_employee"/>
+    <schema id="13" parent="1" name="sys"/>
+    <schema id="14" parent="1" name="test"/>
+    <schema id="15" parent="1" name="test0713"/>
+    <table id="16" parent="2" name="auth_function"/>
+    <table id="17" parent="2" name="auth_role"/>
+    <table id="18" parent="2" name="auth_role_function"/>
+    <table id="19" parent="2" name="auth_user"/>
+    <table id="20" parent="2" name="auth_user_role"/>
+    <column id="21" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="22" parent="16" name="name">
+      <Position>2</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="16" name="parent_id">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="16" name="url">
+      <Position>4</Position>
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="16" name="serial_num">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="16" name="accordion">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="27" parent="16" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="29" parent="17" name="name">
+      <Position>2</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="30" parent="17" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="31" parent="18" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="32" parent="18" name="role_id">
+      <Position>2</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="18" name="function_id">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="18" name="status">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="35" parent="18" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="36" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="37" parent="19" name="name">
+      <Position>2</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="19" name="pwd">
+      <Position>3</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="39" parent="19" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="41" parent="20" name="role_id">
+      <Position>2</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="20" name="user_id">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="43" parent="20" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
